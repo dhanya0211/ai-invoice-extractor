@@ -1,3 +1,5 @@
 pillow
-google-gnerativeai
+easyocr
+sqlite3
 dotenv
+sentence_transformers
