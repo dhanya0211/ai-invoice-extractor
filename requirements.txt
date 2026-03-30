@@ -2,4 +2,12 @@ pillow
 easyocr
 sqlite3
 dotenv
-sentence_transformers
+fastapi
+uvicorn
+python-multipart
+pydantic
+PyMuPDF
+numpy
+transformers
+torch
+torchvision
