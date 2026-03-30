@@ -20,7 +20,7 @@ An entirely local, CPU-friendly AI application that extracts data from invoices 
 1. **Install Python dependencies:**
    Make sure you have Python 3.9+ installed, then run:
    ```bash
-   git clone https://github.com/your-username/ai-invoice-analyzer.git
+   git clone https://github.com/dhanya0211/ai-invoice-analyzer.git
    cd ai-invoice-analyzer
    pip install -r requirements.txt
    
