@@ -9,23 +9,24 @@ from PIL import Image
 import json
 from embeddings import get_embeddings  
 from database_connection import save_invoice_to_db, search_similar_invoices 
-
+from logger_config import setup_app_logging
 # ------------------------- 
 # Local AI / Transformer Imports
 # -------------------------
 import easyocr
 from transformers import pipeline
 
-print("Loading OCR Model...")
+logger = setup_app_logging()
+logger.info("Loading OCR Model...")
 ocr_reader = easyocr.Reader(['en'], gpu=False)
 
-print("Loading LLM for parsing & chatting...")
+logger.info("Loading LLM for parsing & chatting...")
 llm_pipeline = pipeline(
     "text-generation",
     model="Qwen/Qwen2.5-0.5B-Instruct", 
     device="cpu" 
 )
-print("Models loaded successfully!")
+logger.info("Models loaded successfully!")
 
 # -------------------------
 # FastAPI App
@@ -145,10 +146,11 @@ def analyze_invoice(file: UploadFile = File(...)):
             raw_json=json.dumps(invoice.model_dump())
         )
         # ---------------------------------------------------------
-        
+        logger.info(f"Successfully saved the invoice to the database{invoice.vendor}")
         return invoice
 
     except Exception as e:
+        logger.error(f"An error occur {e}")
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 
@@ -159,6 +161,8 @@ def analyze_invoice(file: UploadFile = File(...)):
 def chat_with_invoices(chat_request: ChatRequest):
     """Answers user questions based on database history."""
     user_query = chat_request.user_message
+    logger.info("___New Request___")
+    logger.info(f"User query : {user_query}")
 
     try:
         # 1. Embed the user's question
@@ -193,12 +197,15 @@ def chat_with_invoices(chat_request: ChatRequest):
             do_sample=True
         )
         bot_reply = output[0]["generated_text"][-1]["content"]
-
+        logger.info(f"AI Reply {bot_reply}")
+        logger.debug(f"Top most matches that llm found{len(top_matches)}")
         # 6. Return response
+        logger.info("Successfully completed the llm service")
         return ChatResponse(
             reply=bot_reply,
             sources_used=[f"Retrieved {len(top_matches)} related invoices from DB."]
         )
 
     except Exception as e:
+        logger.error(f"Chat failed:{str(e)}")
         raise HTTPException(status_code=500, detail=f"Chat failed: {str(e)}")
