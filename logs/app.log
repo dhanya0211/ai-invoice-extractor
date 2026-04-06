@@ -88,3 +88,145 @@
 2026-03-31 16:44:36,484 - root - INFO - User query : what is the invoice number?
 2026-03-31 16:44:52,059 - root - INFO - AI Reply The invoice numbers provided in your message are IN-761 for three invoices.
 2026-03-31 16:44:52,060 - root - INFO - Successfully completed the llm service
+2026-04-02 09:42:49,524 - root - INFO - Loading OCR Model...
+2026-04-02 09:42:52,038 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 09:43:06,273 - root - INFO - Models loaded successfully!
+2026-04-02 09:45:15,494 - root - INFO - Loading OCR Model...
+2026-04-02 09:45:17,517 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 09:45:21,124 - root - INFO - Models loaded successfully!
+2026-04-02 09:47:48,533 - root - INFO - Successfully saved the invoice to the databaseBioplex
+2026-04-02 09:49:06,957 - root - INFO - Successfully saved the invoice to the databaseBioplex
+2026-04-02 09:50:40,264 - root - INFO - ___New Request___
+2026-04-02 09:50:40,264 - root - INFO - User query : total amount of the invoice?
+2026-04-02 09:50:54,926 - root - INFO - AI Reply The total amount for all three invoices is $1.195 USD.
+2026-04-02 09:50:54,927 - root - INFO - Successfully completed the llm service
+2026-04-02 09:54:55,359 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-02 09:57:03,001 - root - INFO - ___New Request___
+2026-04-02 09:57:03,002 - root - INFO - User query : total amount of the invoice?
+2026-04-02 09:57:16,373 - root - INFO - AI Reply The total amount for all three invoices is $1.195 USD.
+2026-04-02 09:57:16,374 - root - INFO - Successfully completed the llm service
+2026-04-02 10:20:42,625 - root - INFO - Loading OCR Model...
+2026-04-02 10:20:44,643 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:20:48,355 - root - INFO - Models loaded successfully!
+2026-04-02 10:20:58,977 - root - INFO - Loading OCR Model...
+2026-04-02 10:21:00,866 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:21:03,908 - root - INFO - Models loaded successfully!
+2026-04-02 10:21:42,661 - root - INFO - Loading OCR Model...
+2026-04-02 10:21:44,770 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:21:47,650 - root - INFO - Models loaded successfully!
+2026-04-02 10:23:04,273 - root - INFO - Successfully saved the invoice to the databasevarasiddhi silk exports
+2026-04-02 10:23:52,587 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-02 10:24:20,755 - root - INFO - ___New Request___
+2026-04-02 10:24:20,756 - root - INFO - User query : date of the invoice?
+2026-04-02 10:24:26,631 - root - INFO - Retrieved Top ID s from the ['{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}']
+2026-04-02 10:24:34,982 - root - INFO - AI Reply The date of the invoices is listed as "28.10.2019".
+2026-04-02 10:24:34,983 - root - INFO - Successfully completed the llm service
+2026-04-02 10:28:37,513 - root - INFO - ___New Request___
+2026-04-02 10:28:37,513 - root - INFO - User query : vendor is Company Name and the invoice_number  is 0012 invoice_date is 2016-06-26 and due_date is 2016-07-26 and then what is the total amount?
+2026-04-02 10:28:44,810 - root - INFO - Retrieved Top ID s from the ['{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}']
+2026-04-02 10:28:55,355 - root - INFO - AI Reply The total amount for the invoice with vendor "Company Name" and invoice number "0012" is $1.195.
+2026-04-02 10:28:55,355 - root - INFO - Successfully completed the llm service
+2026-04-02 10:33:51,935 - root - INFO - Loading OCR Model...
+2026-04-02 10:33:53,861 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:33:57,326 - root - INFO - Models loaded successfully!
+2026-04-02 10:34:04,826 - root - INFO - Loading OCR Model...
+2026-04-02 10:34:06,790 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:34:09,900 - root - INFO - Models loaded successfully!
+2026-04-02 10:34:24,623 - root - INFO - Loading OCR Model...
+2026-04-02 10:34:26,510 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-02 10:34:29,548 - root - INFO - Models loaded successfully!
+2026-04-02 10:37:08,283 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-02 10:37:41,512 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-02 10:38:29,085 - root - INFO - ___New Request___
+2026-04-02 10:38:29,086 - root - INFO - User query : what is the date of the last added invoice?
+2026-04-02 10:38:34,206 - root - INFO - Retrieved Top ID s from the ['{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}', '{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}']
+2026-04-02 10:38:42,952 - root - INFO - AI Reply The last added invoice has an invoice date of October 28, 2019.
+2026-04-02 10:38:42,952 - root - INFO - Successfully completed the llm service
+2026-04-06 09:37:33,185 - root - INFO - Loading OCR Model...
+2026-04-06 09:37:35,916 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 09:37:39,737 - root - INFO - Models loaded successfully!
+2026-04-06 09:52:26,278 - root - INFO - Loading OCR Model...
+2026-04-06 09:52:28,785 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 09:52:32,664 - root - INFO - Models loaded successfully!
+2026-04-06 09:56:00,565 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-06 09:56:30,625 - root - INFO - ___New Request___
+2026-04-06 09:56:30,625 - root - INFO - User query : total amount of the invoice
+2026-04-06 09:56:36,720 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}']
+2026-04-06 09:56:45,908 - root - INFO - AI Reply The total amount of the invoices is $7,370.00.
+2026-04-06 09:56:45,909 - root - INFO - Successfully completed the llm service
+2026-04-06 09:57:49,366 - root - INFO - Successfully saved the invoice to the databasevarasiddhi silk exports
+2026-04-06 09:58:00,037 - root - INFO - ___New Request___
+2026-04-06 09:58:00,037 - root - INFO - User query : total amount of the invoice
+2026-04-06 09:58:06,571 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}']
+2026-04-06 09:58:15,910 - root - INFO - AI Reply The total amount of the invoices is $7,370.00.
+2026-04-06 09:58:15,910 - root - INFO - Successfully completed the llm service
+2026-04-06 10:12:52,030 - root - INFO - Loading OCR Model...
+2026-04-06 10:12:53,962 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:12:57,461 - root - INFO - Models loaded successfully!
+2026-04-06 10:13:05,239 - root - INFO - Loading OCR Model...
+2026-04-06 10:13:07,070 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:13:10,414 - root - INFO - Models loaded successfully!
+2026-04-06 10:13:38,130 - root - INFO - Loading OCR Model...
+2026-04-06 10:13:40,010 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:13:43,080 - root - INFO - Models loaded successfully!
+2026-04-06 10:14:40,350 - root - INFO - File saved to db invoice.webp
+2026-04-06 10:15:25,678 - root - INFO - Successfully saved the invoice to the databasevarasiddhi silk exports
+2026-04-06 10:15:52,231 - root - INFO - ___New Request___
+2026-04-06 10:15:52,232 - root - INFO - User query : total amount of the invoice
+2026-04-06 10:15:59,863 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}', '{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}']
+2026-04-06 10:16:08,828 - root - INFO - AI Reply The total amount of the invoices is $7,370.00.
+2026-04-06 10:16:08,828 - root - INFO - Successfully completed the llm service
+2026-04-06 10:17:10,658 - root - INFO - Loading OCR Model...
+2026-04-06 10:17:12,571 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:17:15,884 - root - INFO - Models loaded successfully!
+2026-04-06 10:17:23,761 - root - INFO - Loading OCR Model...
+2026-04-06 10:17:25,691 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:17:28,958 - root - INFO - Models loaded successfully!
+2026-04-06 10:35:25,032 - root - INFO - Loading OCR Model...
+2026-04-06 10:35:27,096 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:35:30,688 - root - INFO - Models loaded successfully!
+2026-04-06 10:35:38,669 - root - INFO - Loading OCR Model...
+2026-04-06 10:35:40,572 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:35:43,917 - root - INFO - Models loaded successfully!
+2026-04-06 10:36:35,430 - root - INFO - Loading OCR Model...
+2026-04-06 10:36:37,367 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:36:40,504 - root - INFO - Models loaded successfully!
+2026-04-06 10:37:05,229 - root - INFO - Extracted file is invoice.webp
+2026-04-06 10:37:50,440 - root - INFO - Successfully saved the invoice to the databasevarasiddhi silk exports
+2026-04-06 10:38:18,640 - root - INFO - ___New Request___
+2026-04-06 10:38:18,640 - root - INFO - User query : what is the total amount of the invoice
+2026-04-06 10:38:23,903 - root - ERROR - Chat failed:name 'top_k' is not defined
+2026-04-06 10:39:10,663 - root - INFO - Loading OCR Model...
+2026-04-06 10:39:12,712 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:39:16,096 - root - INFO - Models loaded successfully!
+2026-04-06 10:43:18,825 - root - INFO - Loading OCR Model...
+2026-04-06 10:43:20,768 - root - INFO - Loading LLM for parsing & chatting...
+2026-04-06 10:43:23,972 - root - INFO - Models loaded successfully!
+2026-04-06 10:44:17,214 - root - INFO - Extracted file is invoice.webp
+2026-04-06 10:45:02,595 - root - INFO - Successfully saved the invoice to the databasevarasiddhi silk exports
+2026-04-06 10:45:26,075 - root - INFO - ___New Request___
+2026-04-06 10:45:26,075 - root - INFO - User query : what is the total amount of the invoice
+2026-04-06 10:45:32,452 - root - INFO - Retrieved Top ID s from the ['{"vendor": "varasiddhi silk exports", "invoice_number": "IN-761", "invoice_date": "28.10.2019", "due_date": "28.10.2020", "total_amount": "1.195", "currency": "USD", "valid": true}']
+2026-04-06 10:45:37,689 - root - INFO - AI Reply The total amount of the invoice is $1.195.
+2026-04-06 10:45:37,689 - root - INFO - Successfully completed the llm service
+2026-04-06 10:45:51,932 - root - INFO - Extracted file is invoice2.jpg
+2026-04-06 10:46:21,215 - root - INFO - Successfully saved the invoice to the databaseCompany Name
+2026-04-06 10:46:28,145 - root - INFO - ___New Request___
+2026-04-06 10:46:28,145 - root - INFO - User query : what is the total amount of the invoice
+2026-04-06 10:46:33,691 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Company Name", "invoice_number": "0012", "invoice_date": "2016-06-26", "due_date": "2016-07-26", "total_amount": "73700.00", "currency": "USD", "valid": true}']
+2026-04-06 10:46:39,308 - root - INFO - AI Reply The total amount of the invoice is $73700.00.
+2026-04-06 10:46:39,308 - root - INFO - Successfully completed the llm service
+2026-04-06 11:00:29,030 - root - INFO - Extracted file is Vendor.docx
+2026-04-06 11:00:29,031 - root - ERROR - An error occur cannot identify image file <_io.BytesIO object at 0x000002478865A2A0>
+2026-04-06 11:01:57,519 - root - INFO - Extracted file is Vendor.pdf
+2026-04-06 11:02:18,646 - root - INFO - Successfully saved the invoice to the databaseGlobal Tech Solutions Inc.
+2026-04-06 11:03:05,768 - root - INFO - ___New Request___
+2026-04-06 11:03:05,768 - root - INFO - User query : what is the total amount of the invoice
+2026-04-06 11:03:11,336 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Global Tech Solutions Inc.", "invoice_number": "GTS-2026-04-09", "invoice_date": "April 9, 2026", "due_date": "May 9, 2026", "total_amount": "$4,205.00", "currency": "USD", "valid": true}']
+2026-04-06 11:03:17,036 - root - INFO - AI Reply The total amount of the invoice is $4,205.00.
+2026-04-06 11:03:17,036 - root - INFO - Successfully completed the llm service
+2026-04-06 11:07:20,540 - root - INFO - ___New Request___
+2026-04-06 11:07:20,540 - root - INFO - User query : how much i spend at cloud hosting services
+2026-04-06 11:07:26,356 - root - INFO - Retrieved Top ID s from the ['{"vendor": "Global Tech Solutions Inc.", "invoice_number": "GTS-2026-04-09", "invoice_date": "April 9, 2026", "due_date": "May 9, 2026", "total_amount": "$4,205.00", "currency": "USD", "valid": true}']
+2026-04-06 11:07:35,091 - root - INFO - AI Reply The information you provided is insufficient to determine your total spending on cloud hosting services. To accurately calculate this, we would need additional details such as the amount spent per month, any specific plans offered by Cloudflare, and any other relevant charges associated with your hosting service.
+2026-04-06 11:07:35,092 - root - INFO - Successfully completed the llm service

@@ -42,13 +42,13 @@ def save_invoice_to_db(vendor, invoice_number, invoice_date, due_date, total_amo
     print(f"Saved invoice from {vendor} to DB successfully.")
 
 # 3. SEARCH FUNCTION (FOR THE CHATBOT)
-def search_similar_invoices(query_embedding, top_k=3):
+def search_similar_invoices(query_embedding):
     """Finds the most relevant invoices by comparing embeddings mathematically."""
     conn = sqlite3.connect('invoices.db')
     cursor = conn.cursor()
     
     # Fetch all records that have an embedding
-    cursor.execute('SELECT raw_json, embedding FROM invoices WHERE embedding IS NOT NULL')
+    cursor.execute('SELECT raw_json, embedding FROM invoices ORDER BY id DESC LIMIT 1')
     rows = cursor.fetchall()
     conn.close()
 
@@ -83,6 +83,6 @@ def search_similar_invoices(query_embedding, top_k=3):
     results.sort(key=lambda x: x[0], reverse=True)
     
     # Extract just the raw_json strings for the top 'k' matches
-    top_matches = [match[1] for match in results[:top_k]]
+    top_matches = [match[1] for match in results[:]]
     
     return top_matches

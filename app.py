@@ -90,6 +90,7 @@ def extract_json_from_text(raw_text):
 def analyze_invoice(file: UploadFile = File(...)):
     """Extracts data from file, gets real embedding, saves to DB"""
     file_bytes = file.file.read()
+    logger.info(f"Extracted file is {file.filename}")
 
     try:
         # Extract Text
@@ -170,15 +171,16 @@ def chat_with_invoices(chat_request: ChatRequest):
 
         # 2. Search your database for the Top 3 most relevant invoices
         # (Your DB file should return a list of JSON strings or dictionaries)
-        top_matches = search_similar_invoices(query_embedding, top_k=3)
-
+        top_matches = search_similar_invoices(query_embedding)
+        logger.info(f"Retrieved Top ID s from the {top_matches}")
         # 3. Format the retrieved data into a string "Context"
         context_text = "\n\n".join([f"Invoice {i+1}: {match}" for i, match in enumerate(top_matches)])
         
         # 4. Formulate the Chatbot Prompt
-        system_prompt = f"""You are a helpful Financial Assistant Chatbot. 
-        Answer the user's question using ONLY the provided database context below. 
-        If the answer is not in the context, say "I don't have records of that in the database."
+        system_prompt = f""""You are a strict financial auditor. Answer the user's question using the provided context.
+          CRITICAL: If the Vendor or Invoice Number in the user query does not match the Vendor or Invoice Number in the context,
+          state clearly that the record was not found.
+          DO NOT use values from one vendor to answer for another.""
         
         DATABASE CONTEXT:
         {context_text}

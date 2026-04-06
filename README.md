@@ -7,7 +7,7 @@ An entirely local, CPU-friendly AI application that extracts data from invoices 
 * **Hybrid OCR:** Uses `PyMuPDF` for digital PDFs and `EasyOCR` as a fallback for scanned images.
 * **Smart Data Parsing:** Uses `Qwen2.5-0.5B-Instruct` to reliably convert raw invoice text into clean JSON.
 * **Custom Vector Database:** Uses standard `SQLite3` combined with `NumPy` Cosine Similarity to search for related invoices mathematically.
-* **Interactive Chatbot:** Ask questions like *"How much did I spend at Walmart?"* and the AI will answer based on your database history.
+* **Interactive Chatbot:** Ask questions like *"How much did I spend totally?"* and the AI will answer based on your database history.
 
 ##  Project Structure
 * `main.py` - The main FastAPI application (Upload & Chat endpoints).
@@ -53,7 +53,7 @@ Use the /chat endpoint to ask natural language questions about your uploaded inv
 code
 JSON
 {
-  "query": "How much did I spend at Walmart last month?"
+  "query": "How much did I spend totally?"
 }
 What happens behind the scenes:
 Your question is converted into a mathematical vector embedding.
