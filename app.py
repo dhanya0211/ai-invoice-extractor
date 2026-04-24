@@ -211,3 +211,6 @@ def chat_with_invoices(chat_request: ChatRequest):
     except Exception as e:
         logger.error(f"Chat failed:{str(e)}")
         raise HTTPException(status_code=500, detail=f"Chat failed: {str(e)}")
+@app.get("/health")
+async def health_check():
+    return {"status":"ok","Message":"The AI is running successfully"}
