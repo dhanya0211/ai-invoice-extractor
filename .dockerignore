@@ -1,0 +1,27 @@
+# 1. Ignore Python junk
+venv/
+__pycache__/
+*.pyc
+
+# 2. Ignore environment secrets (Production uses its own)
+.env
+
+# 3. Ignore the Database (Avoid overwriting production data)
+invoices.db
+sqlite3.exe
+
+# 4. Ignore local logs
+*.log
+logs/
+
+# 5. Ignore static data and results
+# We ignore these because we will use "Volumes" to connect 
+# our real images to the container later.
+extracted_data.json
+*.jpg
+*.png
+*.pdf
+
+# 6. Ignore Git folders
+.git
+.gitignore
